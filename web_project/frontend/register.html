@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="script/register_script.js"> </script>
+    <title>Jammin'</title>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <h1>&nbsp;&nbsp;&nbsp;Jammin'</h1>
+        </div>
+        <div class="sections">
+            <nav>
+                <ul>
+                    <li><a href="donar.html">Donar</a><div class="barra_header"></div></li>
+                    <li><a href="index.html">Información</a><div class="barra_header"></div></li>
+                    <li><a href="login.html"><span id="mostrarUsername"></span></a><div class="barra_header"></div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main_other">
+        <div class="left-section">
+            <div id="infoSeparator"><img class="image_main" src="img/jammin_clean.png" alt="big_logo"/></div>
+        </div>
+        <div class="separator"></div>
+        <div class="right-section">
+            <div id="infoSeparator">
+                <ul>
+                    <li><h4>Necesitamos más información</h4></li>
+                    <li>Introduce tus credenciales.</li>
+                </ul>
+            </div>
+            <form>
+                <div id="textInput">
+                    <input type="text" name="user_username" id="textUsername" placeholder="Usuario" required>
+                </div>
+                <div id="textInput">
+                    <input type="email" name="user_email" id="textMail" placeholder="Correo electrónico" required>
+                </div>
+                <div id="textInput">
+                    <input type="password" name="user_password" id="textPassword" placeholder="Contraseña" required>
+                </div>
+                <div id="bigButton">
+                    <button type="button" id="registerButton" onclick="registrarUsuario()" value="Crear cuenta">Crear cuenta</button>
+                </div>
+            </form>            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Página hecha por: Javier da Silva Costa y Mario Redondo.</p>
+            <p>Realizada para el proyecto de Desarrollo Web y de Apps <br>de la Universidad Europea de Madrid.</p>
+            <a href="https://universidadeuropea.com/" target="_blank"><img id="logo_uem" src="img/uem_logo.png" alt="Logo de la Universidad Europea de Madrid" /></a>
+            <p>&copy; 2023 Jammin'. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

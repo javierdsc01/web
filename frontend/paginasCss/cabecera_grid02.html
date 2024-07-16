@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		header {
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			align-items: center;
+			padding: 10px;
+			background-color: #333;
+			color: #fff;
+		}
+		.logo {
+			font-size: 30px;
+			font-weight: bold;
+			grid-column: 1 / 2;
+            /*La fracción 1 / 2 indica que el logo ocupa la primera columna
+             de la cuadrícula, desde la línea 1 hasta la línea 2*/
+		}
+		.menu {
+			display: grid;
+			grid-template-columns: repeat(3, auto);
+			grid-gap: 10px;
+			align-items: center;
+			justify-content: center;
+			grid-column: 2 / 3;/*Para centrar el menú en la cuadrícula*/
+            /* La fracción 2 / 3 indica que el menú ocupa la segunda columna 
+            de la cuadrícula, desde la línea 2 hasta la línea 3*/
+		}
+		.menu a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.message {
+			font-size: 20px;
+			font-style: italic;
+			grid-column: 3 / 4;/*Para colocar el mensaje a la derecha del logo*/
+            /*La fracción 3 / 4 indica que el mensaje ocupa la tercera columna de la cuadrícula, 
+            desde la línea 3 hasta la línea 4.*/
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">Logo</div>
+		<div class="menu">
+			<a href="#">Inicio</a>
+			<a href="#">Acerca de</a>
+			<a href="#">Contacto</a>
+		</div>
+		<div class="message">Bienvenido a nuestro sitio web</div>
+	</header>
+	<main>
+		<!-- Contenido principal -->
+	</main>
+</body>
+</html>

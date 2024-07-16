@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="script/donar_script.js"> </script>
+    <title>Jammin'</title>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img id="logo" src="img/jammin.png" alt="logo" />
+            <h1>&nbsp;&nbsp;&nbsp;Jammin'</h1>
+        </div>
+        <div class="sections">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Información</a><div class="barra_header"></div></li>
+                    <li><a href="login.html"><span id="mostrarUsername"></span></a><div class="barra_header"></div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main_other">
+        <div class="left-section">
+            <ul>
+                <li>
+                    <div id="infoSeparator">
+                        <ul>
+                            <li><h3>UN PROYECTO DE Jammin'©</h3></li>
+                            <li>Queremos hacer la mejor aplicación posible, para ti y los apasionados del fútbol</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="infoSeparator">
+                        <ul>
+                            <li><h3>AVALADO POR LA UNIVERSIDAD</h3></li>
+                            <li>La universidad confía en nosotros, ¿Y tú?</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="infoSeparator">                    
+                        <ul>
+                            <li><h3>CREADO EN MADRID</h3></li>
+                            <li>Todo lo realizado está hecho en Madrid, promocionando la marca España</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="infoSeparator">
+                        <ul>
+                            <li><h3>TIEMPO RESTANTE: 30 DÍAS</h3></li>
+                            <li>¿A qué esperas?</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div id="infoSeparator">                    
+                        <ul>
+                            <li><h3><span id="donationTotal"></span> APORTACIONES</h3></li>
+                            <li>Y subiendo...</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="separator"></div>
+        <div class="right-section">
+            <div id="infoSeparator">
+                <ul>
+                    <li><h2><span id="amountTotal"></span>€</h2> DE <h1>15000€</h1></li>
+                    <li>Quedan <span id="amountLeft"></span>€, cada Euro cuenta</li>
+                </ul>
+            </div>
+            <div id="numberInput">
+                <input type="number" name="donated" id="numberDona" placeholder="Cantidad a donar..." required>
+            </div>
+            <div id="bigButton">
+                <button type="button" id="donate" onclick="donate()" name="Aportar a Jammin'">Aportar a Jammin'</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Página hecha por: Javier da Silva Costa y Mario Redondo.</p>
+            <p>Realizada para el proyecto de Desarrollo Web y de Apps <br>de la Universidad Europea de Madrid.</p>
+            <a href="https://universidadeuropea.com/" target="_blank"><img id="logo_uem" src="img/uem_logo.png" alt="Logo de la Universidad Europea de Madrid" /></a>
+            <p>&copy; 2023 Jammin'. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

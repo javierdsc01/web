@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="script/login_script.js"> </script>
+    <title>Jammin'</title>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img id="logo" src="img/jammin.png" alt="logo" />
+            <h1>&nbsp;&nbsp;&nbsp;Jammin'</h1>
+        </div>
+        <div class="sections">
+            <nav>
+                <ul>
+                    <li><a href="donar.html">Donar</a><div class="barra_header"></div></li>
+                    <li><a href="index.html">Información</a><div class="barra_header"></div></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main_login">
+        <div class="right-section">
+            <div id="infoSeparator">
+                <ul>
+                    <li><h4>Necesitamos más información</h4></li>
+                    <li>Introduce tus credenciales.</li>
+                </ul>
+            </div>
+            <form>
+                <div id="textInput">
+                    <input type="text" name="user_username" id="textUsername" placeholder="Usuario" required>
+                </div>
+                <div id="textInput">
+                    <input type="password" name="user_password" id="textPassword" placeholder="Contraseña" required>
+                </div>
+                <div id="bigButton">
+                    <button type="button" id="loginButton" value="Aceptar">Aceptar</button>
+                </div>
+            </form>
+            <br/><br/>¿Aún no tienes cuenta? <a href="register.html" target="_self">Regístrate.</a>
+            <br/><br/>También puedes: 
+            <div id="bigButton">
+                <button onclick="cerrarSesion()" type="button" id="logoutButton" value="Aceptar"">Cerrar Sesión</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Página hecha por: Javier da Silva Costa y Mario Redondo.</p>
+            <p>Realizada para el proyecto de Desarrollo Web y de Apps <br>de la Universidad Europea de Madrid.</p>
+            <a href="https://universidadeuropea.com/" target="_blank"><img id="logo_uem" src="img/uem_logo.png" alt="Logo de la Universidad Europea de Madrid" /></a>
+            <p>&copy; 2023 Jammin'. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

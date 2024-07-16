@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+h1 {
+    flex-grow: 1; /* Hace que el h1 ocupe el espacio restante */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav li:hover .barra_header {
+    width: calc(100% - 20px);
+}
+
+h2 {
+    color: #3498db;
+}
+
+section {
+    padding: 40px;
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.barra_header {
+    display: flex;
+    justify-content: flex-end;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: +3px; 
+    left: 50%;
+    transition: width 0.3s ease-out, transform 0.3s ease-out;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    width: 0;
+}
+
+.image_main {
+    border-radius: 10px; /* O el valor que desees para el redondeo */   
+    width: 500px;
+    height: auto;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#body_other{
+    background-color: #1b5981;
+}
+
+#logo {
+    width: 100px; /* Especifica el ancho deseado */
+    height: 50px; /* Especifica la altura deseada */
+    /* Opcional: Si quieres que la imagen sea responsive */
+    max-width: 100%;
+    height: auto;
+}
+
+#logo_uem {
+    max-width: 50%;
+}
+
+#barra-separadora {
+    height: 1px;
+    background-color: #3498db;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#other_p {
+    color: #3498db;
+}
+
+#footer_p{
+    color: white;
+}

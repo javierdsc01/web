@@ -1,0 +1,240 @@
+/* Etiquetas */
+body {
+    background-color: #1b5981;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+main {
+    display: grid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav li:hover .barra_header {
+    width: calc(100% - 20px);
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+/* Clases */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section,
+.right-section {
+    padding: 20px;
+}
+
+.left-section ul{
+    list-style: none; /* Sin viñeta */
+}
+
+.left-section h3,
+.right-section input[type="submit"] {
+    margin: 0;
+}
+
+.separator {
+    background-color: #ccc;
+    height: 100%;
+}
+
+.barra_header {
+    display: flex;
+    justify-content: flex-end;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transition: width 0.3s ease-out, transform 0.3s ease-out;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    width: 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image_main {
+    border-radius: 10px; /* O el valor que desees para el redondeo */   
+    width: 500px;
+    height: auto;
+}
+
+#main_login {
+    grid-template-columns: 1fr;
+}
+
+#main_other {
+    grid-template-columns: 1fr 1px 1fr;
+}
+
+#logo {
+    width: 100px;
+    height: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+#logo_uem {
+    max-width: 50%;
+}
+
+#infoSeparator {
+    background-color: #3498db; /* Cuadrado azul */
+    border-radius: 10px; /* Borde redondeado */
+    margin: 15px; /* Margen de 15px */
+    padding: 15px; /* Padding de 15px */
+    list-style: none; /* Sin viñeta */
+    color: #fff; /* Texto en blanco */
+}
+
+#infoSeparator ul {
+    list-style: none; /* Sin viñeta */
+    margin: 0;
+    padding: 0;
+}
+
+#infoSeparator li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+#infoSeparator h3 {
+    margin: 0;
+}
+
+#infoSeparatorWSquare {
+    background-color: #fff; /* Cuadrado azul */
+    border-radius: 10px; /* Borde redondeado */
+    margin: 15px; /* Margen de 15px */
+    padding: 15px; /* Padding de 15px */
+    list-style: none; /* Sin viñeta */
+    color: #3498db; /* Texto en blanco */
+}
+
+#bigButton button[type="button"] {
+    background-color: #3498db; /* Color de fondo azul */
+    color: #fff; /* Texto en blanco */
+    padding: 20px; /* Padding grande */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+    font-size: 18px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor apuntador al pasar el ratón */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+}
+
+#bigButton input[type="button"]:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
+}
+
+#numberInput input[type="number"] {
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border: 1px solid #3498db; /* Borde del mismo color azul */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+#numberInput input[type="number"]:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #2980b9; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Sutil sombra al enfocar */
+}
+
+#textInput input[type="text"] {
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border: 1px solid #3498db; /* Borde del mismo color azul */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+#textInput input[type="text"]:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #2980b9; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Sutil sombra al enfocar */
+}
+
+#textInput input[type="email"] {
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border: 1px solid #3498db; /* Borde del mismo color azul */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+#textInput input[type="email"]:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #2980b9; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Sutil sombra al enfocar */
+}
+
+#textInput input[type="password"] {
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    border: 1px solid #3498db; /* Borde del mismo color azul */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+#textInput input[type="password"]:focus {
+    outline: none; /* Elimina el contorno al enfocar */
+    border-color: #2980b9; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Sutil sombra al enfocar */
+}

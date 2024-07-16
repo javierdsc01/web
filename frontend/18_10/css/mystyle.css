@@ -1,0 +1,33 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.cajas{
+    border: solid;
+    margin: 1em;
+}
+
+.caja1 {
+    border-color: red;
+}
+
+.caja2 {
+    border-color: blue;
+}
+
+@media only screen and (min-width: 320px) and (max-width:576px){
+    .contenedor{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .cajas{
+        width: 100%;
+        margin: 0%;
+        border: none;
+    }
+}
